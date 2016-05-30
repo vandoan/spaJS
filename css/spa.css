@@ -1,0 +1,50 @@
+
+* {
+	margin 	: 0;
+	padding : 0;
+}
+
+/** Begin standard selectors */
+body {
+	font :	13px 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+	color :	#444;
+	background-color :  #888;
+}
+
+a { text-decoration :  	none; }
+	a:hover { text-decoration : none; }
+	a:link, a:visited { color : inherit; }
+
+strong {
+	color : #000;
+	font-weight : 800; 
+}
+/** End standard selectors */
+
+/** Begin spa namespace selectors */
+#spa {
+	top 	: 8px;
+	left 	: 8px;
+	right 	: 8px;
+	bottom 	: 8px;
+
+	min-height 	: 500px;
+	min-width 	: 500px;
+	overflow 	: hidden;
+	position 	: absolute;
+
+	border-radius 		: 0 8px 0 8px; 
+	background-color 	: #fff;
+}
+/** End spa namespace selectors */
+
+/** Begin utility selectors */
+.spa-x-select {}
+.spa-x-clearfloat {
+	height 	: 0 !important;
+	float 	: none !important;
+	clear 	: both 	!important;
+	visibility 	: 	hidden !important;
+}
+/** End utility selectors */
+
