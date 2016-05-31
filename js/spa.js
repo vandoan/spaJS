@@ -16,6 +16,6 @@ var spa = (function() {
 		);
 	};
 
-	return ( initModule: initModule );
+	return { initModule: initModule };
 }());
 
