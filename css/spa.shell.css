@@ -59,10 +59,15 @@
 .spa-shell-chat {
 	bottom : 0;
 	right : 0;
+	cursor : pointer;
 	width : 300px;
 	height : 15px;
 	background : red;
-	z-index : 1;
+	border-radius : 5px 0 0 0;
+	z-index : 1;cha
+}
+.spa-shell-chat:hover {
+	background : #a00;
 }
 .spa-shell-modal {
 	margin-top : -200px;
