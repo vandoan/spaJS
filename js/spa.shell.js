@@ -86,7 +86,7 @@ spa.shell = (function () {
 			for ( key_name in arg_map ) {
 				if ( arg_map.hasOwnProperty( key_name ) ) {
 					// skip dependent keys during iteration
-					if ( key_name.indexOf( '_' ) === 0 ) { continue KEYVAL, }
+					if ( key_name.indexOf( '_' ) === 0 ) { continue KEYVAL; }
 
 					// update independent key value
 				anchor_map_revise[key_name] = arg_map[key_name];
@@ -132,7 +132,7 @@ spa.shell = (function () {
 	//  * Adjust the application only where proposed state
 	//    differs from existing
 	//
-	onHaschange = function ( event ) {
+	onHashchange = function ( event ) {
 		var
 			anchor_map_previous = copyAnchorMap(),
 			anchor_map_proposed, 
@@ -301,9 +301,8 @@ spa.shell = (function () {
 		// is considered on-load
 		//
 		$(window)
-		  .bind( ' haschange', onHashchange )
-		  .trigger( 'haschange' );
-		};
+		  .bind( 'haschange', onHashchange )
+		  .trigger( 'hashchange' );
 		// End PUBLIC method /initModule/
 		
 		return { initModule : initModule };
